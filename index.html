@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- FORM -->
+      <form class="main-form">
+        <!-- HEADING BOX SECTION -->
+        <div class="heading-box">
+          <h1 class="heading">To Do's</h1>
+          <div class="filter-search-container">
+            <!-- SEARCH BAR -->
+            <div class="search-container" id="search-form">
+              <input type="text" class="searchbox" id="searchbox" />
+            </div>
+            <!-- FILTER -->
+            <div class="filter-container">
+              <select class="filter" id="filter">
+                <option value="All">All</option>
+                <option value="Undone">Undone</option>
+                <option value="Done">Done</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- ADD NOTE BOX SECTION -->
+        <div class="add-note-box">
+          <input type="text" class="txt-add-note" placeholder="Add note..." />
+          <div class="btn btn-add">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- TO DO ITEMS SECTION-->
+        <ul class="todo-items"></ul>
+      </form>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
